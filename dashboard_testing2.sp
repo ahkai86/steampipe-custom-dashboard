@@ -122,37 +122,6 @@ container {
     }
   }
 
-
-// container {
-
-//     graph {
-
-//       title     = "Relationships"
-//       type      = "graph"
-//       direction = "TD"
-
-//       node {
-//         base = aws_insights.node.ebs_volume
-//         args = {
-//           ebs_volume_arns = with.aws_insights.ebs_volumes_for_ec2_instance.rows[*].volume_arn
-//         }
-//       }
-
-      
-//       edge {
-//         base = aws_insights.edge.ec2_autoscaling_group_to_ec2_instance
-//         args = {
-//           ec2_instance_arns = [self.input.instance_arn.value]
-//         }
-//       }
-
-//     }
-
-//   }
-
-
-
-
 }
 
 
